@@ -1,0 +1,479 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARVEL WEBSITE</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <STYLE>
+        *{
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+       body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("https://i.pinimg.com/originals/d5/3b/f8/d53bf8c7d83a0c585215bb3f198c95c2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+          .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+          }
+       
+        a{
+            text-decoration: none;
+            padding-left: 50px;
+            display: inline-block;
+            color: aliceblue;
+           
+        }
+        .arc{
+            list-style: none;
+            display: flex;
+            gap: 50px;
+        }
+        .arc li{
+            display: inline;
+        }
+        .arc a{
+            color: yellow;
+            text-decoration: none;
+            font-size: 20px;
+            transition: color 0.3s e;
+        }
+        .arc a:hover{
+            color: red;
+        }
+        .banner{
+             display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 40px;
+            margin-top: 200px;
+        }
+        .lok{
+            font-size: 40px;
+        }
+        .par{
+          list-style: none;
+            display: flex;
+            gap: 50px;
+           
+        }
+        .par li{
+            display: inline;
+        }
+        .par img{
+border-radius: 40px;
+        }
+        strong{
+            font-size: 30px;
+        }
+        span{
+            color: red;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        img{
+            color: yellow;
+            text-decoration: none;
+            font-size: 20px;
+            transition: color 0.3s ease;
+           
+        }
+        .aq{
+            padding-top: 400px;
+        }
+        
+        .card-section {
+    
+    padding: 30px;
+    padding-top: 500px;
+    width: 100%;
+    margin-bottom: 1OOPX;
+   
+}
+
+.card-slider{
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: slide 19s linear infinite;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.card {
+    width: 250px;
+    background: white;
+    border-radius: 30px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 8px gray;
+    transition: 0.2s;
+    flex-shrink: 0;
+}
+.card:active{
+    transform: scale(0.95);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+}
+
+.card h3 {
+    margin: 8px 0;
+}
+
+.card p {
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+.card button {
+    background: #2196f3;
+    color: white;
+    border: none;
+    padding: 7px 12px;
+    border-radius: 5px;
+    margin-bottom: 12px;
+}
+.card-section:hover{
+    animation-play-state:paused ;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .logo h1 {
+        font-size: 30px !important;
+        padding: 15px 40px !important;
+    }
+
+    .arc {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .arc a {
+        font-size: 14px;
+        padding-left: 5px;
+    }
+
+    .banner {
+        flex-direction: column;
+        margin-top: 50px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .lok {
+        font-size: 22px;
+    }
+
+    .lok strong {
+        font-size: 24px;
+    }
+
+    .lok button {
+        width: 140px !important;
+        height: 50px !important;
+    }
+
+    .par {
+        margin-top: 30px;
+        padding: 0;
+    }
+
+    .par img {
+        width: 220px;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .aq {
+        padding-top: 80px;
+    }
+
+    .aq h4 {
+        font-size: 28px !important;
+    }
+
+    .aq strong {
+        font-size: 24px !important;
+    }
+
+    .card-section {
+        padding: 50px 10px;
+        overflow: hidden;
+    }
+
+    .card {
+        width: 200px;
+    }
+
+    .card img {
+        height: 180px;
+    }
+}
+
+        
+        
+        
+
+         
+
+           
+          
+            
+        
+        
+        
+       
+    </STYLE>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+    <h1 style="background-color: red;color: aliceblue ;display:inline-block;width: fit-content;margin: 20px auto;font-size: 40px; padding: 25px 70px; text-align: center;" >MARVEL</h1>
+</div>
+   <ul class = "arc">
+      <li><a href ="">HOME</a></li>  
+      <li><a href ="">FEATURES</a></li>  
+      <li><a href ="">SKILLS</a></li>  
+      
+       <li><a href ="">CONTACT</a></li> 
+   </ul>
+  </nav>
+  </header>
+  
+   <br>
+   <section class="banner">
+   
+   <div class="lok">
+   <h4>WELCOME TO MY WORLD</h4>
+  
+   
+    <strong>HI,I am <SPAN>VISHNU PRIYAN</SPAN> a Developer</strong>
+    <p> I Have Create A Marvel Website With HTML and CSS</p>
+
+
+
+    <button type="button" style="width: 200px; height: 60px; padding: 15px 30px;background-color: red; color: yellow;">Sign-in</button>
+    <button type="menu"style="width: 200px; height: 60px; padding: 15px 30px; background-color: red; color: yellow;">Sign-up</button><BR><BR>
+    <i class="fa-brands fa-linkedin"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-facebook-messenger"></i>
+    
+   </div>
+   <ul class="par">
+   <li><img src="c:\Users\priya\Downloads\handsome-businessman-with-laptop-isolated-white-background (1).jpg" height="300px" width="300px"></li>
+   </ul>
+   </section>
+   <br><br>
+   
+  <center>
+    <div class="aq">
+    <H4 style=" Font-size: 40px;color: red;">"MARVEL CHARACTERS</H4>
+    <strong style="font-size: 40px;color: aliceblue;">WITH THIER TECHNOLOGIES"</strong>
+   
+</center>
+
+
+   
+   
+   <section class="card-section">
+    
+   
+    <div class="card-slider">
+    
+    <div class="card card1">
+        <img src="https://images3.alphacoders.com/134/1341704.jpeg">
+        <h3>"Loki Use HTML</h3>
+        <p>Loki Using HTML TO Built Universe</p>
+        <button>View More</button>
+    </div>
+    <div class="card card2">
+         <img src="https://tse3.mm.bing.net/th/id/OIP.HfVm-Pc71Q4vy-GVkhlWOwHaEM?r=0&pid=Api&h=220&P=0">
+        <h3>"Iron Man With CSS</h3>
+        <p>Tony Stark Using CSS TO Modify His IronSuit</p>
+        <button>View More</button>
+    </div>
+    <div class="card card3">
+         <img src="https://tse1.mm.bing.net/th/id/OIP.IgOrsYXiuU-5jB7tQtjrNgHaKe?r=0&pid=Api&h=220&P=0">
+        <h3>"Doctor Strange With JavaScript"</h3>
+        <p>"Strange Using JS to Learn Magic</p>
+        <button>View More</button>
+    </div>
+    <div class="card card4">
+         <img src="https://tse4.mm.bing.net/th/id/OIP.ZDSB5qCMZ3vCMcRX5jD_lQHaHR?r=0&pid=Api&h=220&P=0">
+        <h3>"Doctor Doom With FullStack"</h3>
+        <p>Doctor Doom Using FullStack To Re-Built The Multiverse</p>
+        <button>View More</button>
+    </div>
+    <div class="card card5">
+        <img src="https://wallpapercave.com/wp/XdubWX1.jpg">
+        <h3>"Hulk With SQL"</h3>
+        <p>Hulk Using SQL Query To Increase GamaRadiation</p>
+        <button>View More</button>
+    </div>
+    <div class="card card6">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.lzOXg38u429QaTVfT7qX4gHaEK?r=0&pid=Api&h=220&P=0">
+        <h3>"Black Panther With ReactJS"</h3>
+        <p>Black Panther Using ReactJs To Develop Wakhanda</p>
+        <button>View More</button>
+    </div>
+     <div class="card card1">
+        <img src="https://images3.alphacoders.com/134/1341704.jpeg">
+        <h3>"Loki Use HTML</h3>
+        <p>Loki Using HTML TO Built Universe</p>
+        <button>View More</button>
+    </div>
+    <div class="card card2">
+         <img src="https://tse3.mm.bing.net/th/id/OIP.HfVm-Pc71Q4vy-GVkhlWOwHaEM?r=0&pid=Api&h=220&P=0">
+        <h3>"Iron Man With CSS</h3>
+        <p>Tony Stark Using CSS TO Modify His IronSuit</p>
+        <button>View More</button>
+    </div>
+    <div class="card card3">
+         <img src="https://tse1.mm.bing.net/th/id/OIP.IgOrsYXiuU-5jB7tQtjrNgHaKe?r=0&pid=Api&h=220&P=0">
+        <h3>"Doctor Strange With JavaScript"</h3>
+        <p>"Strange Using JS to Learn Magic</p>
+        <button>View More</button>
+    </div>
+    <div class="card card4">
+         <img src="https://tse4.mm.bing.net/th/id/OIP.ZDSB5qCMZ3vCMcRX5jD_lQHaHR?r=0&pid=Api&h=220&P=0">
+        <h3>"Doctor Doom With FullStack"</h3>
+        <p>Doctor Doom Using FullStack To Re-Built The Multiverse</p>
+        <button>View More</button>
+    </div>
+    <div class="card card5">
+        <img src="https://wallpapercave.com/wp/XdubWX1.jpg">
+        <h3>"Hulk With SQL"</h3>
+        <p>Hulk Using SQL Query To Increase GamaRadiation</p>
+        <button>View More</button>
+    </div>
+    <div class="card card6">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.lzOXg38u429QaTVfT7qX4gHaEK?r=0&pid=Api&h=220&P=0">
+        <h3>"Black Panther With ReactJS"</h3>
+        <p>Black Panther Using ReactJs To Develop Wakhanda</p>
+        <button>View More</button>
+    </div>
+    </div>
+    
+<br>
+     <div class="card-slider">
+   
+    <div class="card card1">
+        <img src="https://wallpaperaccess.com/full/55591.jpg">
+        <h3>"Captain America Use HTML5</h3>
+        <p>Captain America Using HTML5 TO Built Power</p>
+        <button>View More</button>
+    </div>
+    <div class="card card2">
+         <img src="https://images.hdqwalls.com/download/thor-in-avengers-age-of-ultron-5k-ck-1280x1024.jpg">
+        <h3>"Thor With ReactJs</h3>
+        <p>Thor Using ReactJS TO Modify His Asgard</p>
+        <button>View More</button>
+    </div>
+    <div class="card card3">
+         <img src="https://tse3.mm.bing.net/th/id/OIP.mJgq0pRDaBoOQtnj312-tgHaEK?r=0&pid=Api&h=220&P=0">
+        <h3>"War Machine With Claude"</h3>
+        <p>"War Machine Using Claude to Learn Operate Guns</p>
+        <button>View More</button>
+    </div>
+    <div class="card card4">
+         <img src="https://images.hdqwalls.com/download/marvels-avengers-spiderman-4k-5w-1360x768.jpg">
+        <h3>"Spider Man With AWS"</h3>
+        <p> Spider Man Using AWS To Gain More Skills</p>
+        <button>View More</button>
+        
+    </div>
+    <div class="card card5">
+         <img src="https://wallpapercave.com/wp/wp4295131.jpg">
+        <h3>"Thanos With AI"</h3>
+        <p> Thanos Using AI To Built The Universe</p>
+        <button>View More</button>
+        
+    </div>
+    <div class="card card6">
+         <img src="https://tse2.mm.bing.net/th/id/OIP.HDXmjJzhhXG8otyIqZStHgHaEK?r=0&pid=Api&h=220&P=0">
+        <h3>"Wolverine With Machine Learning"</h3>
+        <p>Wolverine Using Machine Learning To Save His Universe</p>
+        <button>View More</button>
+        
+    </div>
+     <div class="card card1">
+        <img src="https://wallpaperaccess.com/full/55591.jpg">
+        <h3>"Captain America Use HTML5</h3>
+        <p>Captain America Using HTML5 TO Built Power</p>
+        <button>View More</button>
+    </div>
+    <div class="card card2">
+         <img src="https://images.hdqwalls.com/download/thor-in-avengers-age-of-ultron-5k-ck-1280x1024.jpg">
+        <h3>"Thor With ReactJs</h3>
+        <p>Thor Using ReactJS TO Modify His Asgard</p>
+        <button>View More</button>
+    </div>
+    <div class="card card3">
+         <img src="https://tse3.mm.bing.net/th/id/OIP.mJgq0pRDaBoOQtnj312-tgHaEK?r=0&pid=Api&h=220&P=0">
+        <h3>"War Machine With Claude"</h3>
+        <p>"War Machine Using Claude to Learn Operate Guns</p>
+        <button>View More</button>
+    </div>
+    <div class="card card4">
+         <img src="https://images.hdqwalls.com/download/marvels-avengers-spiderman-4k-5w-1360x768.jpg">
+        <h3>"Spider Man With AWS"</h3>
+        <p> Spider Man Using AWS To Gain More Skills</p>
+        <button>View More</button>
+        
+    </div>
+    <div class="card card5">
+         <img src="https://wallpapercave.com/wp/wp4295131.jpg">
+        <h3>"Thanos With AI"</h3>
+        <p> Thanos Using AI To Built The Universe</p>
+        <button>View More</button>
+        
+    </div>
+    <div class="card card6">
+         <img src="https://tse2.mm.bing.net/th/id/OIP.HDXmjJzhhXG8otyIqZStHgHaEK?r=0&pid=Api&h=220&P=0">
+        <h3>"Wolverine With Machine Learning"</h3>
+        <p>Wolverine Using Machine Learning To Save His Universe</p>
+        <button>View More</button>
+        
+    </div>
+    </div>
+  </section>
+   
+
+
+
+   
+    
+</body>
+</html>
