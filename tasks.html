@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MARVEL WEBSITE</title>
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <STYLE>
         *{
@@ -26,6 +28,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 15px 30px;
+             background-attachment: fixed;
           }
        
         a{
@@ -58,6 +61,7 @@
             align-items: center;
             padding: 30px 40px;
             margin-top: 200px;
+            
         }
         .lok{
             font-size: 40px;
@@ -89,13 +93,13 @@ border-radius: 40px;
            
         }
         .aq{
-            padding-top: 400px;
+            padding-top: 300px;
         }
         
         .card-section {
     
     padding: 30px;
-    padding-top: 500px;
+    padding-top: 300px;
     width: 100%;
     margin-bottom: 1OOPX;
    
@@ -158,6 +162,262 @@ border-radius: 40px;
     animation-play-state:paused ;
 }
 
+
+.testimonials {
+    padding: 80px 30px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.testimonials h2 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.testimonials > p {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.testimonial-line {
+    width: 120px;
+    height: 5px;
+    background: gold;
+    margin: 0 auto 40px;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    width: 280px;
+    min-height: 360px;
+    background: white;
+    border-radius: 10px;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 3px 10px gray;
+    transition: 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+}
+
+.testimonial-card img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.testimonial-card h3 {
+    color: #222;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.testimonial-card h4 {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.stars {
+    color: #d99a00;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.testimonial-card p {
+    color: #333;
+    font-size: 14px;
+    line-height: 1.6;
+}
+/* REGISTER FORM */
+
+.register-section {
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+}
+
+.register-box {
+    width: 550px;
+    background: #22313b;
+    padding: 40px 30px;
+    border-radius: 30px;
+    box-shadow: 0 5px 20px black;
+}
+
+.register-box h2 {
+    text-align: center;
+    color: #20c997;
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.register-box > p {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* First name + Last name */
+
+.name-row {
+    display: flex;
+    gap: 10px;
+}
+
+.name-row input {
+    width: 50%;
+}
+
+/* Input boxes */
+
+.register-box input {
+    height: 80px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 0 18px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* Email */
+
+.register-box > input {
+    width: 100%;
+}
+
+/* Password */
+
+.password-box {
+    position: relative;
+}
+
+.password-box input {
+    width: 100%;
+}
+
+.password-box i {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    font-size: 22px;
+    color: #555;
+    cursor: pointer;
+}
+
+/* Submit button */
+
+.register-btn {
+    width: 100%;
+    height: 70px;
+    border: none;
+    border-radius: 15px;
+    background: #20c997;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.register-btn:hover {
+    background: #15a87d;
+}
+
+/* Sign in */
+
+.signin {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.signin a {
+    color: #20c997;
+    padding-left: 5px;
+}
+
+.signin a:hover {
+    color: white;
+}
+/* FOOTER */
+
+.footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding-top: 45px;
+    margin-top: 50px;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+.footer-social a {
+    width: 55px;
+    height: 55px;
+    padding: 0;
+    background: white;
+    color: #111;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    background: red;
+    color: white;
+    transform: translateY(-5px);
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 35px;
+}
+
+.footer-links a {
+    color: white;
+    padding: 0;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: red;
+}
+
+.footer-bottom {
+    background: black;
+    padding: 20px;
+    font-size: 16px;
+    color: white;
+}
 /* RESPONSIVE */
 
 @media (max-width: 600px) {
@@ -238,6 +498,59 @@ border-radius: 40px;
     .card img {
         height: 180px;
     }
+     .testimonials {
+        padding: 50px 15px;
+    }
+
+    .testimonials h2 {
+        font-size: 30px;
+    }
+
+    .testimonial-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-card {
+        width: 90%;
+        max-width: 300px;
+    }
+     .register-section {
+        padding: 50px 15px;
+    }
+
+    .register-box {
+        width: 100%;
+        padding: 30px 15px;
+    }
+
+    .register-box h2 {
+        font-size: 35px;
+    }
+
+    .register-box > p {
+        font-size: 16px;
+    }
+
+    .name-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .name-row input {
+        width: 100%;
+    }
+
+    .register-box input {
+        height: 65px;
+        font-size: 17px;
+    }
+
+    .register-btn {
+        height: 60px;
+        font-size: 22px;
+    }
+
 }
 
         
@@ -304,9 +617,6 @@ border-radius: 40px;
    
 </center>
 
-
-   
-   
    <section class="card-section">
     
    
@@ -469,8 +779,221 @@ border-radius: 40px;
     </div>
     </div>
   </section>
+ 
+
+<section class="testimonials">
+
+    <h2>Testimonials</h2>
+
+    <p>
+        What our visitors say about our Marvel Website
+    </p>
+
+    <div class="testimonial-line"></div>
+
+
+    <div class="testimonial-container">
+
+        <!-- TESTIMONIAL 1 -->
+
+        <div class="testimonial-card">
+
+            <img src="https://people.com/thmb/RUDvvWeUc0KoOzcN7a0VZtrcTDI=/4000x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(777x471:779x473)/Chris-Evans-Wedding-Band-101423-01-8ab8e8e451ba45aebcb3bbf716bb320f.jpg">
+
+            <h3>Steve Rogger</h3>
+
+            <h4>The First Avenger</h4>
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                This Marvel website is amazing.
+                The design and technologies are
+                explained in a very interesting way.
+            </p>
+
+        </div>
+
+
+        
+
+        <div class="testimonial-card">
+
+            <img src="https://i.pinimg.com/originals/d7/d9/03/d7d903117294be5418dc9d4ac8ee7f7d.jpg">
+
+            <h3>Tony Stark</h3>
+
+            <h4>Founder Of Stark Industries</h4>
+
+            <div class="stars">
+                ★★★☆☆
+            </div>
+
+            <p>
+                I really enjoyed exploring the
+                Marvel characters and their connection
+                with modern web technologies.
+            </p>
+
+        </div>
+
+
+       
+
+        <div class="testimonial-card">
+
+            <img src="https://i.pinimg.com/originals/fd/b0/ad/fdb0ad2ae39d6784a9f1b823a4a6596c.jpg">
+
+            <h3>Dr.Bruce Banner</h3>
+
+            <h4>Expert Of Gamma Science</h4>
+
+            <div class="stars">
+                ★★★★☆
+            </div>
+
+            <p>
+                A creative portfolio with a nice
+                Marvel theme. The cards and animations
+                make the website attractive.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+</section>
+
+
+
+
+<section class="register-section">
+
+    <div class="register-box">
+
+        <h2>Register</h2>
+
+        <p>Signup now and get full access to our app.</p>
+
+
+        <div class="name-row">
+
+            <input type="text" placeholder="Firstname">
+
+            <input type="text" placeholder="Lastname">
+
+        </div>
+
+
+        <input type="email" placeholder="Email">
+
+
+        <div class="password-box">
+
+            <input type="password" id="password"
+                   placeholder="Password">
+
+            <i class="fa-regular fa-eye-slash"
+               onclick="showPassword('password', this)"></i>
+
+        </div>
+
+
+        <div class="password-box">
+
+            <input type="password" id="confirmPassword"
+                   placeholder="Confirm password">
+
+            <i class="fa-regular fa-eye-slash"
+               onclick="showPassword('confirmPassword', this)"></i>
+
+        </div>
+
+
+        <button class="register-btn">
+            Submit
+        </button>
+
+
+        <div class="signin">
+            Already have an account ?
+            <a href="">Signin</a>
+        </div>
+
+    </div>
+
+</section>
    
 
+
+<footer class="footer">
+
+   
+
+    <div class="footer-social">
+
+        <a href="#">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="#">
+            <i class="fa-brands fa-twitter"></i>
+        </a>
+
+        <a href="#">
+            <i class="fa-brands fa-google-plus-g"></i>
+        </a>
+
+        <a href="#">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+
+    </div>
+
+
+   
+
+    <ul class="footer-links">
+
+        <li>
+            <a href="#">Home</a>
+        </li>
+
+        <li>
+            <a href="#">News</a>
+        </li>
+
+        <li>
+            <a href="#">About</a>
+        </li>
+
+        <li>
+            <a href="#">Contact Us</a>
+        </li>
+
+        <li>
+            <a href="#">Our Team</a>
+        </li>
+
+    </ul>
+
+
+    
+
+    <div class="footer-bottom">
+
+        Copyright ©2026; Designed by <strong>VISHNU PRIYAN</strong>
+
+    </div>
+
+</footer>
 
 
    
